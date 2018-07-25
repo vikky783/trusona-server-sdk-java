@@ -5,6 +5,10 @@ branches:
     - /^release.*$/
     - /^v\d+\.\d+\.\d+$/  ## matching vX.Y.Z where X.Y.Z conforms to semver
 
+env:
+  global:
+    - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
+
 language: java
 jdk: oraclejdk8
 install: true
