@@ -20,7 +20,11 @@ script:
   - ./gradlew clean build cobertura
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --debug 
+
+## --prefix ./trusona-sdk-http/build
+## ./trusona-sdk/build
+## ./trusona-sdk-resources/build
 
 deploy:
   - provider: script
