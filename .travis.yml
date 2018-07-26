@@ -21,7 +21,8 @@ script:
 
 after_script:
   - ./cc-test-reporter after-build --id $CC_TEST_REPORTER_ID --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk --debug
-  - ./cc-test-reporter after-build --id $CC_TEST_REPORTER_ID --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk/build/ --debug
+  - ./cc-test-reporter after-build --id $CC_TEST_REPORTER_ID --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk/build --debug
+  - ./cc-test-reporter after-build --id $CC_TEST_REPORTER_ID --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk/build/cobertura --debug
 
 ##  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk-http --debug
 ##  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT --coverage-input-type cobertura --prefix ./trusona-sdk-resources --debug
