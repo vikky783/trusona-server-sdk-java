@@ -51,10 +51,10 @@ dependencies {
   compile project(":trusona-sdk-http")
   compile project(":trusona-sdk-resources")
 
-  testCompile "org.codehaus.groovy:groovy-all:2.5.3"
-  testCompile "org.spockframework:spock-core:1.2-groovy-2.5"
-  testCompile "com.squareup.okhttp3:mockwebserver:3.11.0"
+  testCompile "org.codehaus.groovy:groovy-all:2.5.8"
+  testCompile "org.spockframework:spock-core:1.3-groovy-2.5"
+  testCompile "com.squareup.okhttp3:mockwebserver:4.2.2"
   testCompile "ch.qos.logback:logback-classic:1.2.3"
 
-  spotbugsPlugins "com.h3xstream.findsecbugs:findsecbugs-plugin:1.9.0"
+  spotbugsPlugins "com.h3xstream.findsecbugs:findsecbugs-plugin:1.10.1"
 }
